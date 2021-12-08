@@ -4,10 +4,13 @@ from models import Video
 from flask_restful import Resource
 
 class VideoListResource(Resource):
-    pass
+    def get():
+        pass
 
 class VideoResource(Resource):
-    pass
+    def post():
+        pass
 
 class VideoAvailability(Resource):
-    pass
+    def put():
+        pass
