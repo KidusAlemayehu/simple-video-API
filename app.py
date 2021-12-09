@@ -81,6 +81,3 @@ if __name__ == '__main__':
 #         return jsonify({'message':'video doesnot found'}), HTTPStatus.NOT_FOUND
 #     vids_list.remove(vid)
 #     return jsonify({'message':'video removed successfully'}), HTTPStatus.OK
-
-if __name__ == "__main__":
-    app.run(debug=True, port=5000)
