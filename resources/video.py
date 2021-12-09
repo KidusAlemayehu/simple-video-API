@@ -11,6 +11,6 @@ class VideoResource(Resource):
     def post():
         pass
 
-class VideoAvailability(Resource):
+class VideoAvailabilityResource(Resource):
     def put():
         pass
