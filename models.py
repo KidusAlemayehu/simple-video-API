@@ -1,5 +1,16 @@
 from app import db
 
+vid_list = []
+
+
+def get_last_id():
+    if vid_list:
+        last_vid = vid_list[-1]
+    else:
+        return 1
+    return last_vid.id + 1
+
+
 class Video(db.Model):
     __tablename__ = 'video'
     id = db.Column(db.Integer(), primary_key=True)
@@ -12,9 +23,9 @@ class Video(db.Model):
 
     def __repr__(self):
         return {
-            "id": self.id,
+            "id": get_last_id(),
             "title": self.title,
             "genre": self.genre,
             "description": self.description,
-            "released_year": self.released_year
+            "released_year": self.released_year,
         }
